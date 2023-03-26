@@ -82,6 +82,8 @@
                   <!-- /.row -->
                 </div><!-- /.container-fluid -->
               </div>
+
+              {{-- <livewire:admin.users.list-users /> --}}
     {{-- @endsection --}}
 </x-admin-layout>
 
