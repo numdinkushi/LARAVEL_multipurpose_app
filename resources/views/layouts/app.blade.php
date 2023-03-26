@@ -52,6 +52,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Footer -->
   @include('layouts.partials.footer')
 
+ 
 </div>
 <!-- ./wrapper -->
 
@@ -64,5 +65,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- AdminLTE App -->
 <script src="{{asset('backend/dist/js/adminlte.min.js')}}"></script>
 <livewire:scripts />
+<script>
+    window.addEventListener('show-form', event =>{
+      $('#form').modal('show')
+    })
+
+    window.addEventListener('hide-form', event =>{
+      $('#form').modal('hide')
+    })
+</script>
 </body>
 </html>
